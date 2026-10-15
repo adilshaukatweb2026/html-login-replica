@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <style>
+        main {
+            position: relative;
+        }
+        .bg-video {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            z-index: -1;
+            mix-blend-mode: multiply;
+        }
+</style>
+</head>
+
+<body>
+
+    <nav>
+        <h2>MY WEBSITE</h2>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="index.html">Login</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <video autoplay muted loop class="bg-video">
+            <source src="./assets/video/bg2.mp4" type="video/mp4">
+        </video>
+
+        <form action="./signup3.html" method="post">
+            <fieldset>
+                <legend>
+                    <h2>Sing Up</h2>
+                </legend>
+                <h3>Contact information</h3>
+                <label for="mobile">Mobile Number</label>
+                <br>
+                <input type="tel" id="mobile" name="mobile" placeholder="0310-1234567" required>
+                <br><br>
+
+                <label for="country">Country</label>
+                <br>
+                <input type="text" id="country" name="country" list="countries" placeholder="Country" required>
+                <datalist id="countries">
+                    <option value="Pakistan"></option>
+                    <option value="India"></option>
+                    <option value="Banlagesh"></option>
+                    <option value="Australia"></option>
+                    <option value="Canada"></option>
+                    <option value="United States"></option>
+                    <option value="United Kingdom"></option>
+                    <option value="Saudi Arabia"></option>
+                </datalist>
+                <br><br>
+                <label for="address">Address</label>
+                <br>
+                <input type="text" id="address" name="address" placeholder="House no, Street, City">
+                <br><br>
+                <label for="details">Address Details</label>
+                <br>
+                <textarea name="details" id="details" rows="4" cols="30"
+                    placeholder="Enter your full address"></textarea>
+                <br><br>
+                <label for="contact">Preferred Contact Method</label>
+                <br>
+                <select name="contact" id="contact">
+                    <option value="">Preferred Contact Method</option>
+                    <option value="email">Email</option>
+                    <option value="phone">Phone Call</option>
+                    <option value="sms">SMS</option>
+                    <option value="whatsapp">WhatsApp</option>
+                </select>
+                <br><br>
+                <label for="terms">Agreement To Terms</label>
+                <input type="checkbox" id="terms" name="terms" value="yes">
+                <br><br>
+
+                <a href="./signup3.html"><button type="button">Next</button></a>
+            </fieldset>
+        </form>
+
+    </main>
+
+    <footer>
+        <p>Developed by <b>Adil Shaukat</b> Student of <b>SMIT WMA-12 Roll # 920819</b></p>
+    </footer>
+
+</body>
+
+</html>

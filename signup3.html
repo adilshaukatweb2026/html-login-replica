@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <style>
+        main {
+            position: relative;
+        }
+        .bg-video {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            z-index: -1;
+            mix-blend-mode: multiply;
+        }
+</style>
+</head>
+
+<body>
+
+    <nav>
+        <h2>MY WEBSITE</h2>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="index.html">Login</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <video autoplay muted loop class="bg-video">
+            <source src="./assets/video/bg2.mp4" type="video/mp4">
+        </video>
+
+        <form action="./signup4.html" method="post" enctype="multipart/form-data">
+            <fieldset>
+                <legend>
+                    <h2>Sign Up</h2>
+                </legend>
+                <h3>Work Experience</h3>
+                <label for="job">Current Job Title</label>
+                <br>
+                <input type="text" id="job" name="job" placeholder="Job Title" required>
+                <br><br>
+                <label for="exp">Year Of Experience</label>
+                <br>
+                <input type="number" id="exp" name="exp" min="0" max="50" placeholder="Years" required>
+                <br><br>
+                <label for="start">Employment Start Date</label>
+                <br>
+                <input type="month" id="start" name="start" required>
+                <br><br>
+                <label for="resume">Upload Resume</label>
+                <br>
+                <input type="file" id="resume" name="resume" accept=".pdf,,doc,.docx" required>
+                <br><br>
+                <label for="skills">Skills</label>
+                <br>
+                <input type="text" id="skills" name="skills" list="skilllist" placeholder="Skills" required>
+                <datalist id="skilllist">
+                    <option value="HTML"></option>
+                    <option value="CSS"></option>
+                    <option value="JavaScript"></option>
+                    <option value="Python"></option>
+                    <option value="Java"></option>
+                    <option value="C++"></option>
+                    <option value="SQL"></option>
+                    <option value="Communication"></option>
+                </datalist>
+                <br><br>
+
+                <a href="./signup4.html"><button type="button">Next</button></a>
+            </fieldset>
+        </form>
+
+    </main>
+
+    <footer>
+        <p>Developed by <b>Adil Shaukat</b> Student of <b>SMIT WMA-12 Roll # 920819</b></p>
+    </footer>
+
+</body>
+
+</html>
